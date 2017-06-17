@@ -92,15 +92,6 @@ export default class App extends Component {
                 <NavItem>Chat with Feathers</NavItem>
               </LinkContainer>}
 
-              <LinkContainer to="/chat">
-                <NavItem>Chat</NavItem>
-              </LinkContainer>
-              <LinkContainer to="/widgets">
-                <NavItem>Widgets</NavItem>
-              </LinkContainer>
-              <LinkContainer to="/survey">
-                <NavItem>Survey</NavItem>
-              </LinkContainer>
               <LinkContainer to="/about">
                 <NavItem>About Us</NavItem>
               </LinkContainer>
