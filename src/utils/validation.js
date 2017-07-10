@@ -4,20 +4,20 @@ const join = rules => (value, data, params) => rules.map(rule => rule(value, dat
 export function email(value) {
   // Let's not start a debate on email regex. This is just for an example app!
   if (!isEmpty(value) && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
-    return 'Invalid email address';
+    return 'Неверный адресс электронной почты';
   }
 }
 
 export function required(value) {
   if (isEmpty(value)) {
-    return 'Required';
+    return 'Заполните поле';
   }
 }
 
 export function minLength(min) {
   return value => {
     if (!isEmpty(value) && value.length < min) {
-      return `Must be at least ${min} characters`;
+      return `Длинее пароль векаша ${min} `;
     }
   };
 }

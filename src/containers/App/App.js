@@ -14,7 +14,7 @@ import { Notifs, InfoBar } from 'components';
 import { push } from 'react-router-redux';
 import config from 'config';
 import { asyncConnect } from 'redux-connect';
-
+/* eslint-disable prefer-template */
 @asyncConnect([{
   promise: ({ store: { dispatch, getState } }) => {
     const promises = [];
@@ -78,7 +78,7 @@ export default class App extends Component {
         <Navbar fixedTop>
           <Navbar.Header>
             <Navbar.Brand>
-              <IndexLink to="/" activeStyle={{ color: '#33e0ff' }}>
+              <IndexLink to="/" activeStyle={{ color: 'white', fontSize: 20 + 'px' }}>
                 <div className={styles.brand} />
                 <span>{config.app.title}</span>
               </IndexLink>
@@ -93,14 +93,16 @@ export default class App extends Component {
               </LinkContainer>}
 
               <LinkContainer to="/about">
-                <NavItem>About Us</NavItem>
+                <NavItem>О нас</NavItem>
               </LinkContainer>
-
+              <LinkContainer to="/secret">
+                <NavItem>Админ Панель</NavItem>
+              </LinkContainer>
               {!user && <LinkContainer to="/login">
-                <NavItem>Login</NavItem>
+                <NavItem>Логин</NavItem>
               </LinkContainer>}
               {!user && <LinkContainer to="/register">
-                <NavItem>Register</NavItem>
+                <NavItem>Регистрация</NavItem>
               </LinkContainer>}
               {user && <LinkContainer to="/logout">
                 <NavItem className="logout-link" onClick={this.handleLogout}>

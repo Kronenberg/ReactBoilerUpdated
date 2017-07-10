@@ -1,0 +1,74 @@
+.prodCoursesTitle {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  h2 {
+    font-size: 60px;
+    color: #393746;
+    letter-spacing: 0.36px;
+    line-height: 64px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  h4 {
+    font-weight: 400;
+    font-size: 24px;
+    color: #8d9aa8;
+    letter-spacing: 0.34px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 45px;
+  }
+}
+
+.myTafutureProdCourseTableble  {
+  border-collapse: collapse;
+  margin-bottom: 100px;
+  height: 50px;
+  margin: 0 auto;
+  tr:first-child {
+    border-top: 1px solid lightgrey;
+  }
+  tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    border-bottom: 1px solid lightgrey;
+    height: 50px;
+    padding-top:15px !important;
+    padding-bottom:15px !important;
+    td {
+      position: relative;
+      text-align: left;
+      font-weight: 400;
+      color: #555555;
+
+    }
+    td:nth-child(2) {
+      font-size: 22px;
+      font-weight: bold;
+    }
+    td:nth-child(3) {
+      -webkit-font-smoothing: antialiased;
+      font-size:14px;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    td:last-child {
+      -webkit-font-smoothing: antialiased;
+      font-size:14px;
+    }
+  }
+  img {
+    position: relative;
+    vertical-align: middle;
+    width: auto;
+    height: 32px;
+    display: block;
+  }
+  i {
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    color: #898989;
+    margin-right: 4px;
+  }
+}

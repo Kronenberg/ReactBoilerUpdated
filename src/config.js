@@ -15,7 +15,7 @@ module.exports = Object.assign({
   apiHost: process.env.APIHOST || 'localhost',
   apiPort: process.env.APIPORT,
   app: {
-    title: 'Kronen Boiler',
+    title: 'Название сайта',
     description: 'All the modern best practices in one example.',
     head: {
       titleTemplate: 'Kronen Boiler: %s',

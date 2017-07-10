@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { CounterButton, GithubButton } from 'components';
 import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
+import cx from 'classnames';
+// @COMPONENTS
+import FutureProjectsTable from './HomeComponents/FutureProjectsTable';
+import SearchCourseGlobal from './HomeComponents/SearchCourseGlobal';
 
 @connect(
   state => ({
@@ -16,15 +19,27 @@ export default class Home extends Component {
   };
 
   render() {
-    const { online } = this.props;
     const styles = require('./Home.scss');
-    // require the logo image both from client and server
-    const logoImage = require('./logo.png');
     return (
-      <div className={styles.home}>
-        <Helmet title="Home" />
-        <div className={styles.masthead}>
-          <h1>home page</h1>
+      <div className={cx('jumbotron', 'vertical-center', styles.mainWrapper)}>
+        <Helmet title="Очень домашняя страничка"/>
+        <div>
+        </div>
+        <div className={cx(styles.prodCourses, 'col-md-12', 'col-sm-12', 'col-xs-12')}>
+          <myTestPage />
+          <div className={styles.blockQuote}>
+            <blockquote>
+              <h2>Тут будет написана первая строчка очень мотивирующего текста</h2>
+              <h4>Тут будет написана вторая строчка очень мотивирующего текста</h4>
+              <h6>Автор Авторович Автор</h6>
+              <button>Начать прямо сейчас!</button>
+            </blockquote>
+          </div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/nKIu9yen5nc" frameBorder="0" allowFullScreen></iframe>
+          <SearchCourseGlobal />
+          <FutureProjectsTable
+            user="ASJDHKSAJDHSADKJASHDKAJSHKJDHSAKJDas"
+          />
         </div>
       </div>
     );

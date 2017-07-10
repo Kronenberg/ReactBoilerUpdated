@@ -1,16 +1,61 @@
-/**
- * Override Bootstrap styles that you can't modify via variables here.
- *
- */
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:400,700');
+
+$navBarBackroudDefault: #393746;
+$navBarFontSize: 20px;
+$navBarFontColorDeafult: #fff;
+$navBarFontColorOnHover:#ef494f;
+$navBarFontColorOnActive: #ef494f;
+
+body {
+  padding:0 !important;
+}
+* {
+  font-family: 'Vollkorn', serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+a {
+  border: none !important;
+}
 
 .navbar-brand {
   position: relative;
   padding-left: 50px;
+  span {
+    color: #ffffff;
+  }
+}
+
+.navbar-default a {
+  font-size: $navBarFontSize;
+  color: $navBarFontColorDeafult;
+  letter-spacing: 0.36px;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #33e0ff;
+  color: $navBarFontColorOnHover !important;
+  border: none;
   background-color: transparent;
+  transition: .4s ease;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -o-transition: .4s ease;
+}
+
+.navbar-default {
+  background: $navBarBackroudDefault;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,.7);
+  position: fixed;
+  top: 0;
+  border: none;
+  height: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-size: $navBarFontSize;
+  color: $navBarFontColorDeafult !important;
+  letter-spacing: 0.36px;
 }

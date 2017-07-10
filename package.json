@@ -65,7 +65,7 @@
       "env": {
         "NODE_PATH": "./src",
         "NODE_ENV": "development",
-        "PORT": 3000,
+        "PORT": 3008,
         "APIPORT": 3030,
         "WEBPACK_DLLS": 1
       }
@@ -98,6 +98,7 @@
   },
   "dependencies": {
     "async": "^2.1.4",
+    "axios": "^0.16.2",
     "babel-core": "^6.23.1",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
@@ -138,6 +139,7 @@
     "passport-facebook-token": "^3.3.0",
     "pretty-error": "^2.0.2",
     "prop-types": "^15.5.8",
+    "query-string": "^4.3.4",
     "react": "^15.4.2",
     "react-bootstrap": "^0.31.0",
     "react-dom": "^15.4.2",
